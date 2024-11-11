@@ -5,7 +5,7 @@ class Solution:
         visited = [[False] * cols for _ in range(rows)]
 
         def dfs(r, c):
-            if r < 0 or r >= rows or c < 0 or c >= cols or map_grid[r][c] == 'W' or visited[r][c]:
+            if r < 0 or r >= rows or c < 0 or c >= cols or grid[r][c] == 'W' or visited[r][c]:
                 return
         visited[r][c] = True
         dfs(r + 1, c)  # Down
