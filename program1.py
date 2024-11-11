@@ -16,7 +16,7 @@ class Solution:
         island_count = 0
         for r in range(rows):
             for c in range(cols):
-                if map_grid[r][c] == 'L' and not visited[r][c]:
+                if grid[r][c] == 'L' and not visited[r][c]:
                     dfs(r, c)
                     island_count += 1  # Found a new island
 
