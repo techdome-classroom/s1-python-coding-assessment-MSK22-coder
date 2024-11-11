@@ -1,4 +1,4 @@
-def decode_message( s: str, p: str) -> bool:
+def decode_message( message: str, p: str) -> bool:
         m, n = len(message), len(decoder_key)
         dp = [[False] * (n + 1) for _ in range(m + 1)]
         dp[0][0] = True
