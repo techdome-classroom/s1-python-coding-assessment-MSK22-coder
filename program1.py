@@ -1,7 +1,7 @@
 class Solution:
    
     def getTotalIsles(self, grid: list[list[str]]) -> int:
-        rows, cols = len(grid), len(map_grid[0])
+        rows, cols = len(grid), len(grid[0])
         visited = [[False] * cols for _ in range(rows)]
 
         def dfs(r, c):
