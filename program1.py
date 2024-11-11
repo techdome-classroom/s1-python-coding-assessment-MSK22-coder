@@ -22,4 +22,3 @@ class Solution:
 
     return island_count#    write your code here
                     
-        return 0
