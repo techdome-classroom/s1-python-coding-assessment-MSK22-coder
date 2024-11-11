@@ -16,7 +16,7 @@ def decode_message( s: str, p: str) -> bool:
                         elif decoder_key[j - 1] == '?' or decoder_key[j - 1] == message[i - 1]:
                         dp[i][j] = dp[i - 1][j - 1]
 
-    return dp[m][n]
+        return dp[m][n]
 # write your code here
   
         return False
